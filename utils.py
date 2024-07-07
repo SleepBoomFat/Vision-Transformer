@@ -23,6 +23,6 @@ def get_loaders(train_df_dir, test_df_dir, submission_df_dir, batch_size):
 
     train_dataloader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
     val_dataloader = DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=True)
-    test_dataloader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
+    test_dataloader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False)
 
     return train_dataloader, val_dataloader, test_dataloader
